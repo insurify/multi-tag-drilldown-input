@@ -1,0 +1,15 @@
+$border-color: #ddd;
+$gray: #404040;
+$brand-blue: #0077b9;
+$brand-info: #3fc4ff;
+$gray-lightest2: #f9f9f9;
+$white: #fff;
+$gray-lightest3: #efefef;
+$blue-active: #00b6d4;
+$brand-success: #33d8a5;
+
+/* Set rem fallback */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
