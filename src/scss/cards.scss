@@ -1,5 +1,4 @@
 .cards-list {
-  display: table;
   width: 100%;
 
   list-style: none;
@@ -20,25 +19,22 @@
     border-radius: 0;
 
     a {
-      display: table-cell;
+      display: table-row;
       width: 100%;
       color: $gray;
       text-decoration: none;
       border-bottom: 1px solid $border-color;
-      i {
+      i,
+      img {
         display: table-cell;
         vertical-align: middle;
-        background: $gray-lightest2;
-        height: 55px;
-        width: 55px;
         padding: 10px;
-        img {
-          width: 100%;
-          display: block;
-          &.tick {
-            display: none;
-          }
-        }
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: auto;
       }
       span {
         display: table-cell;
@@ -176,12 +172,12 @@
     }
     &.card-mini {
       margin: 0;
-      display: table;
+      float: left;
+      width: 16.6%;
 
       .card {
         display: table-cell;
         padding: 5px;
-        width: 25%;
         &:first-child {
           padding-left: 0;
         }
@@ -192,31 +188,15 @@
           width: 100%;
           min-height: 105px;
 
-          i {
+          i,
+          img {
             padding-top: 10px;
-            width: 66px;
           }
           span {
             font-size: 12px;
             line-height: 1.2;
             padding: 0px 3px 10px 3px;
           }
-        }
-      }
-      &.card-recommend {
-        width: 100%;
-        .card {
-          width: 16.6%;
-          a {
-            span {
-              font-size: 1.2rem;
-            }
-          }
-        }
-      }
-      .card-mini-max {
-        .card {
-          max-width: 130px;
         }
       }
     }

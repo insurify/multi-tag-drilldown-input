@@ -151,9 +151,9 @@
   };
 
   MultiSelectTypeaheadInput.prototype.updateInputHelpText = function(
-    place_holder
+    placeholder
   ) {
-    this.$input.tagsinput('input').attr('placeholder', place_holder);
+    this.$input.tagsinput('input').attr('placeholder', placeholder);
   };
   /* Allocate data set to tagsinput box, also assign values to typeahead
   * @param options
@@ -164,7 +164,7 @@
     var currentOptions = this.getCurrentOptions();
     var data;
 
-    this.updateInputHelpText(currentOptions.place_holder);
+    this.updateInputHelpText(currentOptions.placeholder);
 
     if (typeof currentOptions.data_source == 'function') {
       data = currentOptions.data_source.apply(null, this.getCurrentTagItems());
@@ -239,7 +239,6 @@
           currentOptions.custom_classes
         )
       },
-      //this.getDataSets(currentOptions)
       {
         limit: currentOptions.display_limit,
         name: currentOptions.data_holder_name,

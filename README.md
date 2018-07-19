@@ -2,26 +2,23 @@
 
 multi-tag-drilldown-input is a JavaScript library that
 
-The multi-tag-drilldown-input library consists of 3 components: the suggestion engine,
-[Bloodhound], and the typeahead component, [Typeahead] and the multitags input [bootstrap-tagsinput].
+The multi-tag-drilldown-input library wraps3 components: the suggestion engine,
+[Bloodhound], the typeahead component [Typeahead] and the multitags input [bootstrap-tagsinput] to provide a select module for hierarchical information.
 It allows for the selection of values dependent on each other by drilling down from one to the next.
+Each value can be passed as a url, a function that received the previously selected values, or a static list.
+
+![multi-tag-drilldown-input](demo.gif)
 
 <!-- section links -->
 
-[gh-page]: http://twitter.github.io/typeahead.js/
+[gh-page]: https://github.com/insurify/multi-tag-drilldown-input/
 [bloodhound]: https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md
 [typeahead]: https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md
 [bootstrap-tagsinput]: http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
 
 ## Getting Started
 
-How you acquire typeahead.js is up to you.
-
-Preferred method:
-
-- Install with [Bower]: `$ bower install typeahead.js`
-
-Other methods:
+How you acquire multitag-drilldown-input.js is up to you.
 
 - [Download zipball of latest release][zipball].
 - Download the latest dist files individually:
@@ -35,8 +32,7 @@ Other methods:
 
 <!-- section links -->
 
-[bower]: http://bower.io/
-[zipball]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.js.zip
+[zipball]: http://twitter.github.com/typeahead.js/releases/latest/multitag-drilldown-input.js.zip
 [bloodhound.js]: http://twitter.github.com/typeahead.js/releases/latest/bloodhound.js
 [typeahead.jquery.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.jquery.js
 [typeahead.bundle.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.bundle.js
@@ -46,10 +42,8 @@ Other methods:
 ## Documentation
 
 - [Docs]
-- [Bloodhound Docs]
 
-[typeahead docs]: https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md
-[bloodhound docs]: https://github.com/twitter/typeahead.js/blob/master/doc/bloodhound.md
+[typeahead docs]: https://github.com/insurify/multitag-drilldown-input/doc/multi-tag-drilldown-input.md
 
 ## Examples
 
@@ -69,16 +63,13 @@ For some working examples of multi-tag-drilldown-input, visit the [examples page
 
 ## Customer Support
 
-For general questions about multi-tag-drilldown-input, tweet at [@typeahead].
-
 For technical questions, you should post a question on [Stack Overflow] and tag
 it with [typeahead.js][so tag].
 
 <!-- section links -->
 
 [stack overflow]: http://stackoverflow.com/
-[@typeahead]: https://twitter.com/typeahead
-[so tag]: http://stackoverflow.com/questions/tagged/typeahead.js
+[so tag]: http://stackoverflow.com/questions/tagged/multi-tag-drilldown-input.js
 
 ## Issues
 
@@ -101,18 +92,6 @@ And constructed with the following guidelines:
 
 For more information on semantic versioning, please visit http://semver.org/.
 
-<!--
-## Testing
-
-Tests are written using [Jasmine] and ran with [Karma]. To run
-the test suite with PhantomJS, run `$ npm test`.
-
-<!-- section links -->
-<!--
-[jasmine]: http://jasmine.github.io/
-[karma]: http://karma-runner.github.io/
--->
-
 ## Developers
 
 If you plan on contributing to multi-tag-drilldown-input, be sure to read the
@@ -122,8 +101,8 @@ and provide developers a chance to get more familiar with multi-tag-drilldown-in
 taking on more challenging work.
 
 In order to build and test multi-tag-drilldown-input, you'll need to install its dev
-dependencies (`$ npm install`) and have [grunt-cli]
-installed (`$ npm install -g grunt-cli`). Below is an overview of the available
+dependencies (`$ npm install`) and have [gulp]
+installed (`$ npm install -g gulp`). Below is an overview of the available
 Grunt tasks that'll be useful in development.
 
 - `grunt build` – Builds _multi-tag-drilldown-input_ from source.
