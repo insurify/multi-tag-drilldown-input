@@ -39,15 +39,9 @@ How you acquire multitag-drilldown-input.js is up to you.
 [typeahead.bundle.min.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.bundle.min.js
 [jquery]: http://jquery.com/
 
-## Documentation
-
-- [Docs]
-
-[typeahead docs]: https://github.com/insurify/multitag-drilldown-input/doc/multi-tag-drilldown-input.md
-
 ## Examples
 
-For some working examples of multi-tag-drilldown-input, visit the [examples page].
+For some working examples of multi-tag-drilldown-input, visit the [examples page] (in progress).
 
 <!-- section links -->
 
