@@ -83,18 +83,12 @@ taking on more challenging work.
 In order to build and test multi-tag-drilldown-input, you'll need to install its dev
 dependencies (`$ npm install`) and have [gulp]
 installed (`$ npm install -g gulp`). Below is an overview of the available
-Grunt tasks that'll be useful in development.
 
-- `grunt build` – Builds _multi-tag-drilldown-input_ from source.
-- `grunt lint` – Runs source and test files through JSHint.
-- `grunt watch` – Rebuilds _multi-tag-drilldown-input_ whenever a source file is modified.
-- `grunt server` – Serves files from the root of typeahead.js on localhost:8888.
-  Useful for using _test/playground.html_ for debugging/testing.
-- `grunt dev` – Runs `grunt watch` and `grunt server` in parallel.
+The main gulp task rebuilds the .js and .css and creates minified versions.
 
 <!-- section links -->
 
-[contributing guidelines]: https://github.com/twitter/typeahead.js/blob/master/CONTRIBUTING.md
+[contributing guidelines]: https://github.com/insurify/multi-tag-drilldown-input/blob/initial_version/CONTRIBUTING.md
 
 ## Maintainers
 
