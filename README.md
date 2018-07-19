@@ -1,6 +1,5 @@
 # [multi-tag-drilldown-input][gh-page]
 
-multi-tag-drilldown-input is a JavaScript library that
 
 The multi-tag-drilldown-input library wraps3 components: the suggestion engine,
 [Bloodhound], the typeahead component [Typeahead] and the multitags input [bootstrap-tagsinput] to provide a select module for hierarchical information.
@@ -18,16 +17,13 @@ Each value can be passed as a url, a function that received the previously selec
 
 ## Getting Started
 
-How you acquire multitag-drilldown-input.js is up to you.
+How you acquire multitag-drilldown-input.js:
+Download the js file from the dist directory
 
-- [Download zipball of latest release][zipball].
-- Download the latest dist files individually:
-  - _[bloodhound.js]_ (standalone suggestion engine)
-  - _[typeahead.jquery.js]_ (standalone UI view)
-  - _[typeahead.bundle.js]_ (_bloodhound.js_ + _typeahead.jquery.js_)
-  - _[typeahead.bundle.min.js]_
-
-**Note:** both _bloodhound.js_ and _typeahead.jquery.js_ have a dependency on
+**Note:**  it has a dependency on
+[bloodhound.js] 0.8.0
+[typeahead.jquery.js]
+[bootstrap-tagsinput]
 [jQuery] 1.9+.
 
 <!-- section links -->
@@ -35,8 +31,7 @@ How you acquire multitag-drilldown-input.js is up to you.
 [zipball]: http://twitter.github.com/typeahead.js/releases/latest/multitag-drilldown-input.js.zip
 [bloodhound.js]: http://twitter.github.com/typeahead.js/releases/latest/bloodhound.js
 [typeahead.jquery.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.jquery.js
-[typeahead.bundle.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.bundle.js
-[typeahead.bundle.min.js]: http://twitter.github.com/typeahead.js/releases/latest/typeahead.bundle.min.js
+[bootstrap-tagsinput]: https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/blob/master/dist/bootstrap-tagsinput.js
 [jquery]: http://jquery.com/
 
 ## Examples
@@ -55,15 +50,6 @@ For some working examples of multi-tag-drilldown-input, visit the [examples page
 - Internet Explorer 8+
 - Opera 11+
 
-## Customer Support
-
-For technical questions, you should post a question on [Stack Overflow] and tag
-it with [typeahead.js][so tag].
-
-<!-- section links -->
-
-[stack overflow]: http://stackoverflow.com/
-[so tag]: http://stackoverflow.com/questions/tagged/multi-tag-drilldown-input.js
 
 ## Issues
 
