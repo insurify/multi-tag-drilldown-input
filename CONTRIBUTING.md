@@ -15,12 +15,11 @@ Here are the basic steps to get started contributing code:
 1.  Fork the repository and get development running on your computer.
 2.  Install the npm development dependencies by the command `npm install` on the project folder (Assumes you already have NodeJS installed).
 3.  Replicate the issue you're trying to fix or spec out the feature you're trying to add.
-4.  Change the code to fix the bug or add the feature. All changes should happen in the relevant `src/js/*.js` and `src/css/*.css` files.
-5.  Build the code by running `npm run build` or `gulp`.
-6.  Run the test cases by running `npm test` or `gulp test`, you can also add more test cases based on your new change.
-7.  Verify that your fix or feature works.
-8.  Commit your changes with an informative description.
-9.  Open a pull request to the repository with your new commit and a descriptive message about what the PR does.
+4.  Change the code to fix the bug or add the feature. All changes should happen in the relevant `src/js/*.js` and `src/scss/*.css` files.
+5.  Build the code by running `gulp`.
+6.  Verify that your fix or feature works.
+7.  Commit your changes with an informative description.
+8.  Open a pull request to the repository with your new commit and a descriptive message about what the PR does.
 
 ## Reporting bugs
 
@@ -38,6 +37,5 @@ If not, create a new issue there and include your test case.
 ### Notes for pull request
 
 - Follow the same code style as the library.
-- Run the test suites in the `test` directory first by running `npm test` or `gulp test`.
 - Don't modify any files in the `dist` directory.
 - Don't alter the licence headers.
