@@ -1,0 +1,41 @@
+{
+  "name": "input-dropdown",
+  "version": "1.0.0",
+  "description": "Multiselect component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "Natalia Vidal",
+    "Ifzal Ahmed",
+    "Bilal Mughal",
+    "Tod Kiryazov",
+    "Steven Moseley"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "del": "^2.2.2",
+    "gh-pages": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-cssbeautify": "^1.0.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.5",
+    "run-sequence": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

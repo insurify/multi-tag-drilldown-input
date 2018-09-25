@@ -1,0 +1,227 @@
+.cards-list {
+  width: 100%;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  border: 1px solid $border-color;
+  border-bottom: none;
+
+  .card {
+    width: 100%;
+    display: table-row;
+    vertical-align: middle;
+    cursor: pointer;
+
+    position: relative;
+    border-radius: 0;
+
+    a {
+      display: table-row;
+      width: 100%;
+      color: $gray;
+      text-decoration: none;
+      border-bottom: 1px solid $border-color;
+      i,
+      img {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: auto;
+      }
+      span {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 400;
+        h6 {
+          margin-bottom: 0;
+        }
+      }
+      &.active {
+        i {
+          background: $brand-success;
+        }
+        img {
+          width: 100%;
+          display: none;
+          &.tick {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .cards-list {
+    display: block;
+    border: none;
+    letter-spacing: -6px;
+    width: auto;
+    margin: 0 -10px;
+
+    &.text-center {
+      text-align: center;
+    }
+
+    .card {
+      letter-spacing: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      padding: 0 10px 10px;
+
+      a {
+        position: relative;
+        text-align: center;
+        display: block;
+        border: none;
+        background: white;
+
+        transition: margin-top, box-shadow, background-color, border, 0.5s,
+          ease-out;
+
+        -moz-box-shadow: 1px 5px 5px -1px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 1px 5px 5px -1px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 5px 5px -1px rgba(0, 0, 0, 0.1);
+
+        border-top: 1px solid $gray-lightest3;
+        border-left: 1px solid $gray-lightest3;
+
+        &:hover {
+          top: 3px;
+          -moz-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+          -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        i {
+          width: 90px;
+          height: auto;
+          background: none;
+          display: block;
+          margin: 0 auto;
+          padding-top: 20px;
+          img {
+            max-height: 100%;
+          }
+        }
+        span {
+          padding: 0px 3px 20px 3px;
+          display: block;
+        }
+        &.active {
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          top: 3px;
+          background: $brand-success;
+          span {
+            color: white;
+          }
+        }
+        &.checked {
+          box-shadow: 1px 1px 0 0 rgba(51, 216, 165, 1);
+          border-top: 1px solid $brand-success;
+          border-left: 1px solid $brand-success;
+          transition: margin-top, box-shadow, background-color, border, 0.5s,
+            ease-out;
+        }
+      }
+    }
+    &.card-mini {
+      margin: 0;
+      float: left;
+      width: 16.6%;
+
+      .card {
+        display: table-cell;
+        padding: 5px;
+        &:first-child {
+          padding-left: 0;
+        }
+
+        a {
+          display: table;
+          height: 100%;
+          width: 100%;
+          min-height: 105px;
+
+          i,
+          img {
+            padding-top: 10px;
+          }
+          span {
+            font-size: 12px;
+            line-height: 1.2;
+            padding: 0px 3px 10px 3px;
+          }
+        }
+      }
+    }
+    &.card-lg {
+      text-align: center;
+      .card {
+        width: 50%;
+        max-width: 460px;
+        a {
+          min-height: 370px;
+          span {
+            padding: 10px 30px 76px 30px;
+            &.min-h-270 {
+              min-height: 270px;
+            }
+          }
+          i {
+            width: 130px;
+          }
+        }
+        .btn {
+          white-space: normal;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        em {
+          font-style: normal;
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .cards-list {
+    .card {
+      width: 20%;
+      max-width: 200px;
+    }
+    &.card-mini {
+      .card {
+        width: 20%;
+
+      }
+    }
+
+    &.card-lg {
+      .card {
+        width: 46%;
+      }
+    }
+  }
+}
