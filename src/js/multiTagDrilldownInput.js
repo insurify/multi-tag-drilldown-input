@@ -232,7 +232,7 @@
       {
         hint: true,
         minLength: currentOptions.min_length,
-        highlight: true,
+        highlight: currentOptions.highlight || true,
         classNames: $.extend(
           {},
           this.defaultCssClasses,

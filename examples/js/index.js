@@ -16,7 +16,6 @@ var inputParams = {
   },
   tagsOptions: [
     {
-      data_container: 'language',
       data_holder_name: 'language',
       min_length: 0,
       placeholder: 'Language',
