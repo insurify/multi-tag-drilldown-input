@@ -58,10 +58,13 @@ When initializing a multiTagDrilldownInput there are a number of options you can
 - `highlight` - If `true`, when suggestions are rendered, pattern matches
   for the current query in text nodes will be wrapped in a `strong` element with its class set to `{{classNames.highlight}}`. Defaults to `true`.
 
-- `hint` -
+- `hint` - If `false`, the typeahead will not show a hint. Defaults to `true`.
 
 ### Datasets
 
 ### Custom events
+
+Since `multitagdrilldowninput` uses `typeahead` its events will also be triggered.
+[typeahead events](https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md#custom-events)
 
 ### Class Names
