@@ -1,57 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"> </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
-  <!--Fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Core App Styles -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
 
-  <!-- Core App Styles -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/style.css" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="../dist/css/style.css">
-  <style>
-    .card img {
-      width: 100px;
-    }
-  </style>
-  <title>Test component</title>
-</head>
+    <link href="css/prism.css" rel="stylesheet" />
+    <style>
+      .card img {
+        width: 100px;
+      }
+    </style>
+    <title>Examples</title>
+  </head>
 
-<body>
-  <section class="panel screen container" id="car_make">
-    <div class="panel-body car-input-flow">
-      <div class="panel-header">
-        <h3 class="normal">
-          Test Component
-          <small>Let's find some repos</small>
-        </h3>
-      </div>
-      <div class="row">
-        <div class="col-md-11 col-center tags-input">
-          <div id="typeahead-input ">
-            <input class="typeahead form-control" id="repos_tag_input" type="text" placeholder="Car year" />
+  <body>
+    <section class="panel screen container">
+      <div class="panel-body car-input-flow">
+        <div class="panel-header">
+          <h3 class="normal">
+            Github Example
+            <small
+              >Select repository by language, most popular and
+              contributor</small
+            >
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-md-11 col-center tags-input">
+            <div id="typeahead-input ">
+              <input
+                class="typeahead form-control"
+                id="repos_tag_input"
+                type="text"
+                placeholder="Language"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <div class="row result" style="display: none; font-size: 20px;">
+        Go to profile on Github: <a href="" class="goto"></a>
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <pre class="language-markup">
+index.html
+          <code>
+&lt;div class=&quot;col-md-11 col-center tags-input&quot;&gt;<br />
+  &lt;div id=&quot;typeahead-input &quot;&gt;<br />
+    &lt;input<br />
+      class=&quot;typeahead form-control&quot;<br />
+      id=&quot;repos_tag_input&quot;<br />
+      type=&quot;text&quot;<br />
+      placeholder=&quot;Language&quot;<br />
+    /&gt;<br />
+  &lt;/div&gt;<br />
+&lt;/div&gt;
+          </code>
+        </pre>
+      </div>
     </div>
-    <div class="row result" style="display: none; font-size: 20px;">Go to profile on Github:
-      <a href="" class="goto"></a>
-    </div>
-  </section>
+    <script src="../src/js/multiTagDrilldownInput.js"></script>
+    <script src="js/index.js"></script>
 
-  <script src="../src/js/multiTagDrilldownInput.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="js/prism.js"></script>
+  </body>
 </html>
